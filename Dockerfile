@@ -10,7 +10,7 @@ COPY package*.json ./
 # Install the dependencies
 RUN npm install
 
-# Copy the rest of the application files into the container
+# Copy the rest of the application files including index.js
 COPY . .
 
 # Expose port 3000 to allow traffic to the application
